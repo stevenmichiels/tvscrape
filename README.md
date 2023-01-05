@@ -9,7 +9,7 @@ A simple TradingView historical Data Downloader. Tvdatafeed allows downloading u
 This module is installed from github repo
 
 ```sh
-pip install --upgrade --no-cache-dir git+https://github.com/StreamAlpha/tvdatafeed.git
+pip install --upgrade --no-cache-dir git+https://github.com/stevenmichiels/tvscrape.git
 ```
 
 
@@ -19,12 +19,12 @@ pip install --upgrade --no-cache-dir git+https://github.com/StreamAlpha/tvdatafe
 Import the packages and initialize with your tradingview username and password.
 
 ```python
-from tvDatafeed import TvDatafeed, Interval
+from tvScrape import TvScrape, Interval
 
 username = 'YourTradingViewUsername'
 password = 'YourTradingViewPassword'
 
-tv = TvDatafeed(username, password)
+tv = TvScrape(username, password)
 ```
 
 You may use without logging in, but in some cases tradingview may limit the symbols and some symbols might not be available.
@@ -32,7 +32,7 @@ You may use without logging in, but in some cases tradingview may limit the symb
 To use it without logging in
 
 ```python
-tv = TvDatafeed()
+tv = TvScrape()
 ```
 
 when using without login, following warning will be shown `you are using nologin method, data you access may be limited`
