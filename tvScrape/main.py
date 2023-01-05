@@ -24,10 +24,22 @@ class Interval(enum.Enum):
     in_2_hour = "2H"
     in_3_hour = "3H"
     in_4_hour = "4H"
+    in_6_hour = "6H"
     in_daily = "1D"
+    in_2D = "2D"
+    in_3D = "3D"
+    in_4D = "4D"
+    in_5D = "5D"
     in_weekly = "1W"
+    in_2W = "2W"
+    in_3W = "3W"
+    in_4W = "4W"
     in_monthly = "1M"
-
+    in_2M = "2M"
+    in_3M = "3M"
+    in_4M = "4M"
+    in_6M = "6M"
+    in_12M = "12M"
 
 class TvScrape:
     __sign_in_url = 'https://www.tradingview.com/accounts/signin/'
