@@ -14,27 +14,27 @@ logger = logging.getLogger(__name__)
 
 
 class Interval(enum.Enum):
-    in_1_minute = "1"
-    in_3_minute = "3"
-    in_5_minute = "5"
-    in_15_minute = "15"
-    in_30_minute = "30"
-    in_45_minute = "45"
-    in_1_hour = "1H"
-    in_2_hour = "2H"
-    in_3_hour = "3H"
-    in_4_hour = "4H"
-    in_6_hour = "6H"
-    in_daily = "1D"
+    in_1m = "1"
+    in_3m = "3"
+    in_5m = "5"
+    in_15m = "15"
+    in_30m = "30"
+    in_45m = "45"
+    in_1h = "1H"
+    in_2h = "2H"
+    in_3h = "3H"
+    in_4h = "4H"
+    in_6h = "6H"
+    in_1D = "1D"
     in_2D = "2D"
     in_3D = "3D"
     in_4D = "4D"
     in_5D = "5D"
-    in_weekly = "1W"
+    in_1W = "1W"
     in_2W = "2W"
     in_3W = "3W"
     in_4W = "4W"
-    in_monthly = "1M"
+    in_1M = "1M"
     in_2M = "2M"
     in_3M = "3M"
     in_4M = "4M"
@@ -201,7 +201,7 @@ class TvScrape:
         self,
         symbol: str,
         exchange: str = "NSE",
-        interval: Interval = Interval.in_daily,
+        interval: Interval = Interval.in_1D,
         n_bars: int = 10,
         fut_contract: int = None,
         extended_session: bool = False,
@@ -325,7 +325,7 @@ if __name__ == "__main__":
         tv.get_hist(
             "EICHERMOT",
             "NSE",
-            interval=Interval.in_1_hour,
+            interval=Interval.in_1h,
             n_bars=500,
             extended_session=False,
         )
