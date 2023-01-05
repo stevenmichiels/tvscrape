@@ -1,6 +1,6 @@
 # **TvDatafeed**
 
-A simple TradingView historical Data Downloader. Tvdatafeed allows downloading upto 5000 bars on any of the supported timeframe.
+A simple TradingView historical Data Downloader. Tvdatafeed allows downloading upto 5000 bars on any of the supported timeframe. Largely inspired on the package from https://github.com/StreamAlpha
 
 
 
