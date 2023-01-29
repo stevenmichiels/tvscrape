@@ -201,7 +201,7 @@ class TvScrape:
         self,
         symbol: str,
         exchange: str = "NSE",
-        interval: Interval = Interval.in_1D,
+        interval: str="1D",
         n_bars: int = 10,
         fut_contract: int = None,
         extended_session: bool = False,
@@ -223,7 +223,6 @@ class TvScrape:
             symbol=symbol, exchange=exchange, contract=fut_contract
         )
 
-        interval = interval.value
 
         self.__create_connection()
 
