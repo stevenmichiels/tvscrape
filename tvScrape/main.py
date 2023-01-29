@@ -324,7 +324,7 @@ if __name__ == "__main__":
         tv.get_hist(
             "EICHERMOT",
             "NSE",
-            interval=Interval.in_1h,
+            interval='1H',
             n_bars=500,
             extended_session=False,
         )
