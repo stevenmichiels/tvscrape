@@ -34,6 +34,7 @@ class Interval(enum.Enum):
     in_2W = "2W"
     in_3W = "3W"
     in_4W = "4W"
+    in_6W = "6W"
     in_1M = "1M"
     in_2M = "2M"
     in_3M = "3M"
