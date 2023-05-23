@@ -84,32 +84,36 @@ tv.search_symbol('CRUDE','MCX')
 ## Supported Time Intervals
 
 Following timeframes intervals are supported-
-
-`Interval.in_1_minute`
-
-`Interval.in_3_minute`
-
-`Interval.in_5_minute`
-
-`Interval.in_15_minute`
-
-`Interval.in_30_minute`
-
-`Interval.in_45_minute`
-
-`Interval.in_1_hour`
-
-`Interval.in_2_hour`
-
-`Interval.in_3_hour`
-
-`Interval.in_4_hour`
-
-`Interval.in_daily`
-
-`Interval.in_weekly`
-
-`Interval.in_monthly`
+    1m = "1"
+    3m = "3"
+    5m = "5"
+    10m = "10"
+    15m = "15"
+    30m = "30"
+    45m = "45"
+    1h = "1H"
+    2h = "2H"
+    3h = "3H"
+    4h = "4H"
+    6h = "6H"
+    8h = "8H"
+    12h = "12H"
+    1D = "1D"
+    2D = "2D"
+    3D = "3D"
+    4D = "4D"
+    5D = "5D"
+    1W = "1W"
+    2W = "2W"
+    3W = "3W"
+    4W = "4W"
+    6W = "6W"
+    1M = "1M"
+    2M = "2M"
+    3M = "3M"
+    4M = "4M"
+    6M = "6M"
+    12M = "12M"
 
 ---
 
