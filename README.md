@@ -54,6 +54,9 @@ for example-
 
 ```python
 # index
+spx_data = tv.get_hist(symbol="SPX",exchange="SP",interval='1H',n_bars=500, extended_session=False)
+
+# stocks
 berkshire_data = tv.get_hist(symbol='BRK.B', exchange='NYSE', interval='1D', n_bars=300)
 aapl_data = tv.get_hist(symbol='AAPL', exchange='NASDAQ', interval='1W', n_bars=300)
 
