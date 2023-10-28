@@ -32,6 +32,7 @@ You may use without logging in, but in some cases tradingview may limit the symb
 To use it without logging in
 
 ```python
+from tvScrape import TvScrape, Interval
 tv = TvScrape()
 ```
 
@@ -46,23 +47,21 @@ To download the data use `tv.get_hist` method.
 It accepts following arguments and returns pandas dataframe
 
 ```python
-(symbol: str, exchange: str = 'NSE', interval: Interval = Interval.in_daily, n_bars: int = 10, fut_contract: int | None = None, extended_session: bool = False) -> DataFrame)
+(symbol: str, exchange: str = 'NSE', interval: Interval = '1D', n_bars: int = 10, fut_contract: int | None = None, extended_session: bool = False) -> DataFrame)
 ```
 
 for example-
 
 ```python
 # index
-nifty_index_data = tv.get_hist(symbol='NIFTY',exchange='NSE',interval=Interval.in_1_hour,n_bars=1000)
-
-# futures continuous contract
-nifty_futures_data = tv.get_hist(symbol='NIFTY',exchange='NSE',interval=Interval.in_1_hour,n_bars=1000,fut_contract=1)
+berkshire_data = tv.get_hist(symbol='BRK.B', exchange='NYSE', interval='1D', n_bars=300)
+aapl_data = tv.get_hist(symbol='AAPL', exchange='NASDAQ', interval='1W', n_bars=300)
 
 # crudeoil
-crudeoil_data = tv.get_hist(symbol='CRUDEOIL',exchange='MCX',interval=Interval.in_1_hour,n_bars=5000,fut_contract=1)
+crudeoil_data = tv.get_hist(symbol='CRUDEOIL',exchange='MCX',interval='1H',n_bars=5000,fut_contract=1)
 
 # downloading data for extended market hours
-extended_price_data = tv.get_hist(symbol="EICHERMOT",exchange="NSE",interval=Interval.in_1_hour,n_bars=500, extended_session=False)
+extended_price_data = tv.get_hist(symbol="AAPL",exchange="NASDAQ",interval='1H',n_bars=500, extended_session=True)
 ```
 
 ---
